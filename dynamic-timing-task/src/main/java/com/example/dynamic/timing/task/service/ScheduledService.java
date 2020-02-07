@@ -26,6 +26,9 @@ public class ScheduledService {
      * 此方法默认使用的线程池为SimpleAsyncTaskExecutor（该线程池默认来一个任务创建一个线程，就会不断创建大量线程，极有可能压爆服务器内存。当然它有自己的限流机制，这里就不多说了，有兴趣的自己翻翻源码~）
      * 项目中为了更好的控制线程的使用，我们可以自定义我们自己的线程池，使用方式@Async("myThreadPool")
      * 链接：https://juejin.im/post/5ca761c36fb9a05e2726b18e
+     * wiz://open_document?guid=9e0fadb8-5dac-43c6-9b40-9848cd2a8990&kbguid=&private_kbguid=d1140c4e-30fb-4957-b06a-18c38a93cded
+     * wiz://open_document?guid=2caee6e1-d6b7-4587-adca-12439efb6676&kbguid=&private_kbguid=d1140c4e-30fb-4957-b06a-18c38a93cded
+     * wiz://open_document?guid=55a60c2a-0ee0-41d5-9916-7cf3a70ed9ec&kbguid=&private_kbguid=d1140c4e-30fb-4957-b06a-18c38a93cded
      *
      */
     @Scheduled(cron = "0/4 * * * * MON-SAT")  //每4秒执行一次
